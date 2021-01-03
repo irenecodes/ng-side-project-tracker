@@ -9,6 +9,7 @@ import { MaterialModule } from './material.module';
 
 import { IdeasService } from './shared/services/ideas.service';
 import { IdeasListComponent } from './ideas-list/ideas-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IdeasListComponent } from './ideas-list/ideas-list.component';
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [ IdeasService ],
   bootstrap: [AppComponent]

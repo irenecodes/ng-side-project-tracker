@@ -15,9 +15,23 @@ export class IdeasListComponent implements OnInit {
   constructor(private ideasService: IdeasService) { }
 
   ngOnInit(): void {
-    this.ideas = this.ideasService.ideas;
-    console.log(this.ideas);
-    
+    this.ideas = this.ideasService.all().subscribe(ideas => this.ideas = ideas)
   }
+
+  selectIdea(idea) {
+    this.selectedIdea = idea;
+  }
+  loadIdeas(){
+
+  }
+  saveIdea(idea){
+
+  }
+  deleteIdea(ideaId){
+
+  }
+
+
+
 
 }
