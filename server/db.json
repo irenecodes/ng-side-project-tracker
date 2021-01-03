@@ -1,0 +1,13 @@
+{
+    "ideas": [
+        {
+            "id": 1,
+            "title": "To do tracker",
+            "description": "a b c",
+            "priority": 10,
+            "primaryTools": ["Angular"],
+            "mvpFeatures": ["Material"],
+            "stretchGoals": ["login authentication"]
+        }
+    ]
+}
